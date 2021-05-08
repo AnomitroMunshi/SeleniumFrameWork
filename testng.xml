@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation.com Test" preserve-order="true">
+    <listeners>
+        <listener class-name="Listeners.AllureListener" />
+    </listeners>
+    <test thread-count="1" name="test">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="Tests.LoginPageTest"/>
+        </classes>
+    </test>
+    <test name="Accounts page Test">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="Tests.AccountPageTest" />
+        </classes>
+    </test>
+
+
+    <!-- Test -->
+</suite> <!-- Suite -->
