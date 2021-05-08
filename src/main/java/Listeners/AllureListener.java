@@ -11,8 +11,8 @@ import org.testng.ITestResult;
 
 public class AllureListener extends DriverFactory implements ITestListener {
 
-    private static String getTestMethodName(ITestResult iTestResult) {
-        return iTestResult.getMethod().getConstructorOrMethod().getName();
+    private static String getTestMethodName(ITestResult result) {
+        return result.getMethod().getConstructorOrMethod().getName();
     }
 
     // Text attachments for Allure
