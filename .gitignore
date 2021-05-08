@@ -7,7 +7,7 @@ test-output/
 ## Java
 ##############################
 .mtj.tmp/
-*.class
+
 *.jar
 *.war
 *.ear
